@@ -1,0 +1,13 @@
+syntax="proto3";
+package Jarvis.thoughts;
+
+
+// This specifies the program and params/variables needed in order to run a
+// binary on any system.
+message Run_program {
+  string binary_to_run = 1;
+  string args = 2;
+  string env_variables = 3;s
+  string tmp_val = 4;
+
+}

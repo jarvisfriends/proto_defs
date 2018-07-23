@@ -2,3 +2,9 @@ build
 cmake-build-debug
 cmake-build-release
 .idea
+
+# Ignore the auto generated go files for all protos
+*.pb.go
+
+# Ignore swp files
+*.swp

@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "Application.proto";
+package jarvis.versions;
+
+// The greeting service definition.
+service App_info {
+    // Sends a greeting
+    rpc GetAllAppInfo (Application) returns (stream Application) {}
+}

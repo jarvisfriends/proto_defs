@@ -1,0 +1,7 @@
+syntax = "proto3";
+package Jarvis.thoughts;
+
+message Machine_stats {
+
+  int32 num_threads = 1;
+}

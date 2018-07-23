@@ -1,0 +1,26 @@
+syntax = "proto3";
+package jarvis.versions;
+
+message Application {
+
+  int64  id = 1;
+  string applicationName = 2;
+  string version = 3;
+  int64  lastUpdateTime = 4;
+
+  //Yes_no enabled
+  //string codename
+  //string application_name
+  //Last_update_time
+  //last_checkup_time
+  //last_problem_time
+  //last_problem_error
+  //string version_url
+  // What token should show up before the version
+  //string version_pre
+  // What token should show up after the version
+  //string version_post
+
+
+}
+

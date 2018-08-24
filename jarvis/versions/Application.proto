@@ -24,3 +24,7 @@ message Application {
 
 }
 
+message AppRequest {
+    int64 numberOfApps = 1;
+    int64 pageNumber = 2;
+}

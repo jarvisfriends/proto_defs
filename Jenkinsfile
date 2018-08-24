@@ -15,18 +15,17 @@ pipeline {
       }
       steps {
         sh '''#!/bin/sh
-
 uname -a
 cat /etc/*-release
-
 # Install needed packages
-docker run --rm -v "$PWD":/usr/src/myapp \\
--w /usr/src/myapp \\
-gcc:latest bash -c \\
-\'apt-get install -y protobuf-dev && \\
- apt-get install -y protobuf-compiler-grpc && \\
-mkdir build && cd build && \\
-cmake .. && make -j\''''
+docker run --rm -v "$PWD":/usr/src/proto_defs \\
+-w /usr/src/proto_defs \\
+fedora:28 bash -c \\
+\'uname -a && \\
+ cat /etc/*-release && \\
+ dnf install -y gcc-c++ protobuf-compiler protobuf-devel ninja-build cmake && \\
+ rm -rf build && mkdir -p build && cd build && \\
+cmake -GNinja .. && ninja\''''
       }
     }
   }

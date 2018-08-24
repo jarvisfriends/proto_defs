@@ -49,7 +49,7 @@ docker run --rm -v "$PWD":/usr/src/proto_defs \\
 fedora:28 bash -c \\
 \'uname -a && \\
  cat /etc/*-release && \\
- dnf install -y gcc-c++ protobuf-compiler protobuf-devel ninja-build cmake && \\
+ dnf install -y gcc-c++ protobuf-compiler protobuf-devel golang-googlecode-goprotobuf ninja-build cmake && \\
  ./generate_protos.sh\''''
           }
         }

@@ -57,7 +57,7 @@ fedora:28 bash -c \\
     }
     stage('Clean up') {
       steps {
-        cleanWs(notFailBuild: true, skipWhenFailed: true)
+        cleanWs()
       }
     }
   }

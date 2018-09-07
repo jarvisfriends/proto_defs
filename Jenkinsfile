@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('generate C++ files') {
+    stage('generate files') {
       parallel {
         stage('generate C++ files') {
           agent {

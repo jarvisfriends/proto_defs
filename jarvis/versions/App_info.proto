@@ -2,8 +2,10 @@ syntax = "proto3";
 import "Application.proto";
 package jarvis.versions;
 
-// The greeting service definition.
+// Status Application data. There is no notion of backwards compatability with this playground.
 service App_info {
-    // Sends a greeting
+    // Gets all known apps streamed back
     rpc GetAllAppInfo (Application) returns (stream Application) {}
+    // Requests a specific applications info by the unique ID
+    rpc GetAppByID (AppRequest) returns (Application) {}
 }

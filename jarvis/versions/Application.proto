@@ -2,9 +2,11 @@ syntax = "proto3";
 package jarvis.versions;
 
 message Application {
-
+  // The unique identifier for this app
   int64  id = 1;
+  // The current Application Name
   string applicationName = 2;
+  // The combined version string
   string version = 3;
   int64  lastUpdateTime = 4;
 

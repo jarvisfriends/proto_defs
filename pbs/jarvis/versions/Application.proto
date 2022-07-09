@@ -1,5 +1,6 @@
 syntax = "proto3";
 package jarvis.versions;
+option go_package = "github.com/jarvisfriends/proto_defs/jarvis/versions"; // golang
 
 message Application {
 
@@ -20,8 +21,6 @@ message Application {
   //string version_pre
   // What token should show up after the version
   //string version_post
-
-
 }
 
 message AppRequest {

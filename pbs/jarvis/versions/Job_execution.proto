@@ -1,0 +1,7 @@
+syntax = "proto3";
+package jarvis.versions;
+option go_package = "github.com/jarvisfriends/proto_defs/jarvis/versions"; // golang
+
+message JobExecution {
+  int32 num_threads = 1;
+}

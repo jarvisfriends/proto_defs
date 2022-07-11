@@ -1,6 +1,6 @@
 syntax="proto3";
-package Jarvis.thoughts;
-
+package jarvis.sw;
+option go_package = "github.com/jarvisfriends/proto_defs/jarvis/sw"; // golang
 
 // This specifies the program and params/variables needed in order to run a
 // binary on any system.
@@ -9,5 +9,4 @@ message Run_program {
   string args = 2;
   string env_variables = 3;
   string tmp_val = 4;
-
 }

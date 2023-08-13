@@ -1,6 +1,7 @@
 syntax = "proto3";
-import "Application.proto";
+ import "jarvis/versions/Application.proto";
 package jarvis.versions;
+option go_package = "github.com/jarvisfriends/proto_defs/jarvis/versions;versions";
 
 // Status Application data. There is no notion of backwards compatability with this playground.
 service App_info {

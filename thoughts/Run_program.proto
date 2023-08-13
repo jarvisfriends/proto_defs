@@ -1,5 +1,6 @@
 syntax="proto3";
 package Jarvis.thoughts;
+option go_package = "github.com/jarvisfriends/proto_defs/thoughts;thoughts";
 
 
 // This specifies the program and params/variables needed in order to run a

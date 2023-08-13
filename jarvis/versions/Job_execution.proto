@@ -1,7 +1,8 @@
 syntax = "proto3";
 package Jarvis.thoughts;
+option go_package = "github.com/jarvisfriends/proto_defs/jarvis/versions;versions";
 
-message Machine_stats {
+message Job_execution {
 
   int32 num_threads = 1;
 }
